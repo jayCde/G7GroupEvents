@@ -1,0 +1,191 @@
+body{
+    margin:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10vw 40vw 40vw 10vw;
+    grid-template-rows: 20vh 5vh  60vh;
+    grid-template-areas: "... menu menu ..."
+                         "messages messages messages messages" 
+                        "... main main ...";
+    
+}
+ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+#messages{
+  font-size: 14px;
+  display: grid;
+  grid-area:messages;
+  font-weight: bolder;
+  text-align: center;
+  color: Black;
+  font-size: larger;
+}
+#table-main{
+    border-radius: 5px;
+    border-bottom: #270949;
+    position: relative;
+
+    font-size: 12px;
+    top: -20%;
+    font-size: 10px;
+    display: grid;
+    grid-area:main;
+    width:100%;
+    height: 100%;
+    grid-template-areas: "Table"; 
+    
+
+}
+#Table{
+  font-size: 14px;
+  grid-area:Table;
+  table-layout: auto;
+width: 100%;
+text-align: center;
+border: 1px solid black;
+border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #f5f5f5;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+#main{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 100%;
+    grid-template-areas: "Welcome form"; 
+}
+th {
+  background-color: #270949;
+  color: white;
+}
+#landing{
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 100% ;
+  grid-template-rows: 100%;
+  grid-template-areas: "landingContentent"; 
+}
+.landingContentent{
+  grid-area: landingContentent;
+
+}
+#main-form{
+    display: grid;
+    grid-area: main;
+    grid-template-columns:  100vw;
+    grid-template-rows: 60vh;
+    grid-template-areas: "form form"; 
+}
+.menu{
+    grid-area:menu;
+   
+}
+.some-page-wrapper {
+    margin: 15px;
+    background-color: red;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #submit1{
+    width: 100%;
+    text-align: center;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .column-one {
+    height: 100%;
+  }
+  
+  .column-two {
+    height: 100%;
+  }
+  
+  .column-three {
+    height: 100%;
+  }
+  .bookevents{
+      align-content:center;
+      position: relative;
+      left: 30%;
+      justify-content: center;
+      text-align: center;
+      width: 100;
+  }
+.menu a{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.Welcome{
+    grid-area:Welcome;
+}
+.errors{
+    /* grid-area:errors; */
+    list-style: none;
+   
+}
+.errors li{
+    margin-bottom:1em;
+    border-radius: 2px;
+
+}
+.sbutton {
+    height: 110px;
+    width: 300px;
+    padding: 32px 16px;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(16, 16, 73);
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    border-radius: 25px; 
+    margin-left: 100px ;
+   
+}
+
+.sbutton:hover {
+    background-color: #3e8e41;
+    color: white;
+    font-size: 45px;
+    border-radius: 40%;
+
+  }
+
+.sbutton:active {
+    transform: translateY(4px);
+  }
+
+nav{
+  text-align: center;
+
+}
+
+.Welcomelogo {
+  grid-area:logo;
+  width: 50vh;
+  height: 100%;
+  padding: 0.02%;
+  padding-right: 0.1%;
+  margin: 0.02%;
+}
